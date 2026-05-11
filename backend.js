@@ -2,7 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 const mysql = require('mysql2');
-require('dotenv').config(); // 🔥 cargar variables de entorno
+require('dotenv').config(); 
 
 const app = express();
 const PORT = 3006;
@@ -93,10 +93,8 @@ app.delete('/contactos/:id', (req, res) => {
   );
 });
 
-/* =============================
-   🚀 INICIAR SERVIDOR
-============================== */
+/* =Inicar=*/
 
 app.listen(PORT, () => {
-  console.log(`🚀 API corriendo en http://localhost:${PORT}`);
+  console.log(` API corriendo en http://localhost:${PORT}`);
 });
